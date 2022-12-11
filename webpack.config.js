@@ -61,12 +61,12 @@ Encore
 
     // uncomment if you use TypeScript
     // .enableTypeScriptLoader()
-    // .enableTypeScriptLoader(function(tsConfig) {
+    .enableTypeScriptLoader(function(tsConfig) {
      // You can use this callback function to adjust ts-loader settings
      // https://github.com/TypeStrong/ts-loader/blob/master/README.md#loader-options
      // For example:
-     // tsConfig.silent = false
-    // })
+     tsConfig.silent = false
+    })
     // uncomment if you use React
     .enableReactPreset()
 
