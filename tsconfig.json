@@ -5,6 +5,9 @@
     "sourceMap": true,
     "jsx": "react"
   },
+  "include": [
+    "assets"
+  ],
   "exclude": [
     "node_modules"
   ]

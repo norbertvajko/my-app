@@ -17,10 +17,10 @@ Encore
     /*
      * ENTRY CONFIG
      *
-     * Each entry will result in one JavaScript file (e.g. app.js)
+     * Each entry will result in one JavaScript file (e.g. App.ts)
      * and one CSS file (e.g. app.scss) if your JavaScript imports CSS.
      */
-    .addEntry('app', './assets/app.js')
+    .addEntry('app', './assets/App.ts')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
@@ -60,13 +60,13 @@ Encore
     .enableSassLoader()
 
     // uncomment if you use TypeScript
-    // .enableTypeScriptLoader()
-    .enableTypeScriptLoader(function(tsConfig) {
+    .enableTypeScriptLoader()
+    // .enableTypeScriptLoader(function(tsConfig) {
      // You can use this callback function to adjust ts-loader settings
      // https://github.com/TypeStrong/ts-loader/blob/master/README.md#loader-options
      // For example:
-     tsConfig.silent = false
-    })
+     // tsConfig.silent = false
+    // })
     // uncomment if you use React
     .enableReactPreset()
 
